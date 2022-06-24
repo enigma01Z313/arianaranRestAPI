@@ -4,6 +4,11 @@ const getStatus = require("../staticDb/simpleStatus");
 
 module.exports = (sequelize, DataTypes) => {
   class Role extends Model {
+    // static associate({ User }) {
+    //   this.hasMany(User, { foreignKey: "role_id" });
+    //   // this.belongsToMany(Department, {through: 'UserDepartments'})
+    // }
+
     toJSON() {
       return {
         ...this.get(),
@@ -29,6 +34,9 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.STRING,
         unique: true,
+      },
+      label: {
+        type: DataTypes.STRING,
       },
       permissions: {
         allowNull: false,

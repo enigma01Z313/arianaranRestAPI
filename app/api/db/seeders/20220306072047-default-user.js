@@ -13,7 +13,6 @@ module.exports = {
         {
           uuid: uuidv4(),
           phone: "09333950889",
-          email: "f.ahmadyf94@gmail.com",
           nationalCode: "0017306140",
           employeeCode: "0000000",
           password,

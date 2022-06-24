@@ -18,6 +18,9 @@ module.exports = {
         type: DataTypes.STRING,
         unique: true,
       },
+      label: {
+        type: DataTypes.STRING,
+      },
       permissions: {
         allowNull: false,
         type: DataTypes.STRING,

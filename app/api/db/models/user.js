@@ -8,15 +8,20 @@ module.exports = (sequelize, DataTypes) => {
       this.belongsTo(Role, { foreignKey: "role_id" });
     }
 
+    permissions = this.get().Role?.permissions ?? "[]";
+    roleData = {
+      role: {
+        id: this.get().Role?.uuid,
+        name: this.get().Role?.name,
+      },
+      permissions: JSON.parse(this.permissions),
+    };
+
     toJSON() {
       return {
         ...this.get(),
         id: this.uuid,
-        role: {
-          id: this.Role.uuid,
-          name: this.Role.name,
-        },
-        permissions: JSON.parse(this.Role.permissions),
+        ...this.roleData,
         status: getStatus(this.status),
         roleId: undefined,
         uuid: undefined,
@@ -43,7 +48,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       email: {
-        allowNull: false,
         type: DataTypes.STRING,
       },
       nationalCode: {

@@ -3,12 +3,11 @@ const fError = require("../utils/fError");
 
 const isUnique = (model, modelFa, param, paramFa) => async (req, res, next) => {
   const keyParam = req.body[param];
-  if(!keyParam)
-    return next()
+  if (!keyParam) return next();
 
   const item = await Models[model].findOne({ where: { [param]: keyParam } });
 
-  if (item)
+  if (item && item.uuid !== req.params.uuid)
     return next(
       fError(
         400,

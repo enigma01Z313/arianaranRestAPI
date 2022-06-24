@@ -1,11 +1,11 @@
-const { Role } = require("../../../db/models");
+const { User } = require("../../../db/models");
 const fError = require("../../utils/fError");
 
-const getRoles = async (req, res, next) => {
+const getUsers = async (req, res, next) => {
   const { defaultOptions, paginationedOptions } = res.dbOptions;
 
-  const items = await Role.findAll(defaultOptions);
-  const pagedItems = await Role.findAll(paginationedOptions);
+  const items = await User.findAll(defaultOptions);
+  const pagedItems = await User.findAll(paginationedOptions);
 
   if (items.length === 0)
     return next(
@@ -20,4 +20,4 @@ const getRoles = async (req, res, next) => {
   return next();
 };
 
-module.exports = getRoles;
+module.exports = getUsers;

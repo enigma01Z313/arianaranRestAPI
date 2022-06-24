@@ -7,7 +7,7 @@ router.use("/auth", authRouter);
 const roleRouter = require("./role");
 router.use("/roles", roleRouter);
 
-// const userRouter = require("./user");
-// router.use("/users", userRouter);
+const userRouter = require("./user");
+router.use("/users", userRouter);
 
 module.exports = router;

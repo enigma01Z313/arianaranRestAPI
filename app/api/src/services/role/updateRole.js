@@ -1,9 +1,11 @@
 const updateRole = async (req, res, next) => {
   let uppedData = false;
   const { jsonData: role } = res;
-  const { name, permissions, status } = req.body;
+  const { name, permissions, status, label } = req.body;
 
   if (name && name !== role.name) role.name = uppedData = name;
+
+  if (label && label !== role.label) role.label = uppedData = label;
 
   if (permissions && JSON.stringify(permissions) !== role.permissions)
     role.permissions = uppedData = JSON.stringify(permissions);

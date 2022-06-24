@@ -3,7 +3,7 @@ const fError = require("../../utils/fError");
 const authorizationDef = (permission) => async (req, res, next) => {
   const { authenticatedUser: user } = res;
 
-  const { permissions: grantedPermissions } = user;
+  const grantedPermissions = user.Role.toJSON().permissions;
 
   if (!grantedPermissions.includes(permission))
     return next(
@@ -19,7 +19,7 @@ const authorizationDef = (permission) => async (req, res, next) => {
 
 const authorizationAnd = (permissions) => async (req, res, next) => {
   const { authenticatedUser: user } = res;
-  const { permissions: grantedPermissions } = user;
+  const grantedPermissions = user.Role.toJSON().permissions;
 
   for (permission of permissions)
     if (!grantedPermissions.includes(permission))
@@ -38,7 +38,7 @@ const authorizationAnd = (permissions) => async (req, res, next) => {
 
 const authorizationOr = (permissions) => async (req, res, next) => {
   const { authenticatedUser: user } = res;
-  const { permissions: grantedPermissions } = user;
+  const grantedPermissions = user.Role.toJSON().permissions;
 
   for (permission of permissions)
     if (grantedPermissions.includes(permission)) return next();
