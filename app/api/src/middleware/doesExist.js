@@ -13,7 +13,7 @@ const doesExist =
       return next(
         fError(
           400,
-          `Duplicate entry: '${model}' with id: '${keyParam}' does not exist`,
+          `Does not exit: '${model}' with id: '${keyParam}' does not exist`,
           `${modelFa} با ${paramFa}  فراخوانی شده، وجود ندارد`
         )
       );

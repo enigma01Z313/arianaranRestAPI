@@ -1,7 +1,5 @@
-// const listPermissions = require("./listPermissions");
 const addUser = require("./addUser");
 const getUsers = require("./getUsers");
-// const updateRole = require("./updateRole");
+const updateUser = require("./updateUser");
 
-// module.exports = { listPermissions, addUser, getRoles, updateRole };
-module.exports = { addUser, getUsers };
+module.exports = { addUser, getUsers, updateUser };

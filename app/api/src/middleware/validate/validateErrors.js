@@ -7,13 +7,13 @@ const validateErrors = (i, v, t, parameterName, parameterNameFa) => {
     (typeof t === "undefined" || t === "")
   )
     return fError(400, v.violations[0], v.violations[1]);
-  else if (i === "regex" && v.value !== "" && !v.value.test(t))
+  else if (i === "regex" && t && v.value !== "" && !v.value.test(t))
     return fError(400, v.violations[0], v.violations[1]);
-  else if (i === "length" && t?.length !== v.value)
+  else if (i === "length" && t && t?.length !== v.value)
     return fError(400, v.violations[0], v.violations[1]);
-  else if (i === "maximum" && t?.length >= v.value)
+  else if (i === "maximum" && t && t?.length >= v.value)
     return fError(400, v.violations[0], v.violations[1]);
-  else if (i === "minimum" && t?.length <= v.value)
+  else if (i === "minimum" && t && t?.length <= v.value)
     return fError(400, v.violations[0], v.violations[1]);
   else if (
     i === "dataType" &&

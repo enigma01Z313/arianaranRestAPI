@@ -2,16 +2,27 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+const mysql = require("mysql2");
+const { dbUrl, dbHost, dbUser, dbPass } = require("../config/dbMysql");
+
 // const mongoose = require("mongoose");
-// const { dbUrl } = require("../config/dbMysql");
-// console.log(dbUrl);
 // mongoose.connect(dbUrl);
-// const db = mongoose.connection;
-// db.on("error", (err) => {
+// const mongoDB = mongoose.connection;
+// mongoDB.on("error", (err) => {
 //   console.log("DATABASE ERROR:");
 //   console.log(err);
 // });
-// db.once("open", () => console.log("Database connected"));
+
+//mysql database conncetion
+const mysqlDB = mysql.createConnection({
+  host: dbHost,
+  user: dbUser,
+  password: dbPass,
+});
+mysqlDB.connect(function (err) {
+  if (err) throw err;
+  console.log("mysql Connected!");
+});
 
 const apiRouter = require("./api/routes");
 const handleError = require("./handleError");

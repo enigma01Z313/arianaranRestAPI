@@ -19,7 +19,6 @@ describe("Roles api tests", () => {
       .expect("Content-Type", "application/json; charset=utf-8")
       .expect(500)
       .expect((res) => {
-        console.log(res);
         const data = res.body;
         if (data.length !== 4)
           return new Error(
