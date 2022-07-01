@@ -18,7 +18,7 @@ const {
   addRole,
   getRoles,
   updateRole,
-} = require("../src/services/role");
+} = require("../src/services");
 
 /**************************/
 /*   validation schemas   */

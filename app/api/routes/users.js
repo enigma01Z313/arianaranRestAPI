@@ -15,7 +15,7 @@ const {
   updateUser,
   addUser,
   getUsers,
-} = require("../src/services/user");
+} = require("../src/services");
 
 /**************************/
 /*   validation schemas   */

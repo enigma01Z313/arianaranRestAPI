@@ -9,7 +9,7 @@ const {
   authornticate,
   oneTimeLogin,
   oneTimeConfirm,
-} = require("../src/services/auth");
+} = require("../src/services");
 
 /**************************/
 /*   validation schemas   */
