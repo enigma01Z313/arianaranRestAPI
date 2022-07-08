@@ -3,7 +3,7 @@ const router = express.Router();
 const use = require("../src/utils/use");
 const serveJson = require("../src/middleware/serveJson");
 const { ValidateF, validator } = require("../src/middleware/validate");
-const userById = require("../src/middleware/gets/userById");
+const getDataByUUID = require("../src/middleware/gets/getDataByUUID");
 
 const {
   authornticate,
@@ -41,9 +41,9 @@ router.post(
 router.post("/", use(validator(phoneSchema)), use(oneTimeLogin), serveJson);
 
 router.post(
-  "/:userId",
+  "/:uuid",
   use(validator(confirmCodeSchema)),
-  use(userById),
+  use(getDataByUUID("User", "نقش کاربری", "Role")),
   use(oneTimeConfirm),
   serveJson
 );

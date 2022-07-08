@@ -13,6 +13,8 @@ const uploadFile =
     form.uploadDir = path.resolve("./", "app/tmp/");
 
     form.parse(req, function (err, fields, files) {
+      res.formFields = fields;
+
       const theFileName = files[fileName].originalFilename;
       const theFileExtension = theFileName.split(".").slice(-1)[0];
       const theFileSize = files[fileName].size;
@@ -47,7 +49,10 @@ const uploadFile =
             fError(500, err.message, "خطای آپلود فایل، مجدد تلاش نمایید")
           );
 
-        const file = await File.create({ path: fileNewName });
+        const file = await File.create({
+          path: fileNewName,
+          name: theFileName,
+        });
         res.file = file;
         next();
       });

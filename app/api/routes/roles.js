@@ -7,7 +7,7 @@ const authentication = require("../src/middleware/auth/authentication");
 const authorization = require("../src/middleware/auth/authorization");
 const { ValidateF, validator } = require("../src/middleware/validate");
 const isUnique = require("../src/middleware/isUnique");
-const getDataByUUID = require("../src/middleware/getDataByUUID");
+const getDataByUUID = require("../src/middleware/gets/getDataByUUID");
 const validatePermissions = require("../src/middleware/validatePermissions");
 const filteredData = require("../src/middleware/filteredData");
 

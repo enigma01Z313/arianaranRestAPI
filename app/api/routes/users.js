@@ -9,7 +9,7 @@ const { ValidateF, validator } = require("../src/middleware/validate");
 const isUnique = require("../src/middleware/isUnique");
 const doesExist = require("../src/middleware/doesExist");
 const filteredData = require("../src/middleware/filteredData");
-const getDataByUUID = require("../src/middleware/getDataByUUID");
+const getDataByUUID = require("../src/middleware/gets/getDataByUUID");
 
 const {
   updateUser,
@@ -85,6 +85,7 @@ router.get(
   use(authorization.def("SEE_USERS")),
   filteredData({ id: { [Op.ne]: 1 } }),
   use(getUsers),
+  (req, res) => res.end('aaaaaa'),
   serveJson
 );
 

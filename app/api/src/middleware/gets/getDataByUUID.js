@@ -1,5 +1,5 @@
-const Models = require("../../db/models");
-const fError = require("../utils/fError");
+const Models = require("../../../db/models");
+const fError = require("../../utils/fError");
 
 const createIncludeArray = (str) => {
   if (!str) return { include: [] };

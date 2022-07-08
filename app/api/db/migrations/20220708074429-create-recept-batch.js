@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   async up(queryInterface, DataTypes) {
-    await queryInterface.createTable('files', {
+    await queryInterface.createTable('recept_batches', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -13,13 +13,28 @@ module.exports = {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
       },
-      path: {
+      year: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
       },
-      name: {
+      month: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
+      },
+      fieldId: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        field: 'field_id'
+      },
+      total: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+      },
+      confirmed: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        defaultValue: 0
       },
       createdAt: {
         allowNull: false,
@@ -32,6 +47,6 @@ module.exports = {
     });
   },
   async down(queryInterface, DataTypes) {
-    await queryInterface.dropTable('files');
+    await queryInterface.dropTable('recept_batches');
   }
 };

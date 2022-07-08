@@ -6,6 +6,7 @@ const { uploadFile, uploadReceptBatch } = require("../src/services");
 
 router.post(
   "/",
+  // use(getReciptBatch),
   use(
     uploadFile({
       name: "reciptFile",

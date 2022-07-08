@@ -1,49 +1,53 @@
 "use strict";
 const { Model } = require("sequelize");
-const path = require("path");
 
 module.exports = (sequelize, DataTypes) => {
-  class File extends Model {
+  class ReceptBatch extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-
-    toJSON() {
-      return {
-        ...this.get(),
-        path: path.resolve("./", "app/filemanager/", this.path),
-        id: this.uuid,
-        uuid: undefined,
-      };
-    }
-
     static associate(models) {
       // define association here
     }
   }
-  File.init(
+  ReceptBatch.init(
     {
       uuid: {
         allowNull: false,
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
       },
-      path: {
+      year: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
       },
-      name: {
+      month: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
+      },
+      fieldId: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        field: 'field_id'
+      },
+      total: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+      },
+      confirmed: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        defaultValue: 0
       },
     },
     {
       sequelize,
-      tableName: "files",
-      modelName: "File",
+      tableName: "recept_batches",
+      modelName: "ReceptBatch",
     }
   );
-  return File;
+  return ReceptBatch;
 };

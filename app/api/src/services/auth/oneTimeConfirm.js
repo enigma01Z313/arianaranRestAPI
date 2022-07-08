@@ -4,7 +4,7 @@ const createJWT = require("../../utils/createJWT");
 const { oneTimeLoginTime } = require("../../../../../config/oneTimeLoginTime");
 
 const oneTimeConfirm = async (req, res, next) => {
-  const { user } = res;
+  const { jsonData: user } = res;
   const { confirmCode } = req.body;
   const { accessToken, refreshToken } = createJWT(user);
   const curTime = new Date().getTime();

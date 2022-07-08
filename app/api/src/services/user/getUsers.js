@@ -9,7 +9,7 @@ const getUsers = async (req, res, next) => {
 
   if (items.length === 0)
     return next(
-      fError(404, "There are not roles yet", "نقش کاربری ای وجود ندارد")
+      fError(404, "There are not users yet", "نقش کاربری ای وجود ندارد")
     );
 
   res.jsonData = {
