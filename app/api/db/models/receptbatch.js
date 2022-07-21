@@ -8,8 +8,23 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
+    static associate({File}) {
       // define association here
+      this.belongsTo(File, { foreignKey: "file_id" })
+    }
+
+    toJSON() {
+      return {
+        ...this.get(),
+        id: this.uuid,
+        total: this.total >= 0 ? this.total : "-",
+        filePath: this.get()?.File?.path,
+        fileName: this.get()?.File?.name,
+        fileId: undefined,
+        file_id: undefined,
+        File: undefined,
+        uuid: undefined,
+      };
     }
   }
   ReceptBatch.init(
@@ -27,20 +42,20 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.INTEGER,
       },
-      fieldId: {
+      fileId: {
         allowNull: false,
         type: DataTypes.INTEGER,
-        field: 'field_id'
+        field: "file_id",
       },
       total: {
         allowNull: false,
         type: DataTypes.INTEGER,
-        defaultValue: 0
+        defaultValue: 0,
       },
       confirmed: {
         allowNull: false,
         type: DataTypes.INTEGER,
-        defaultValue: 0
+        defaultValue: 0,
       },
     },
     {

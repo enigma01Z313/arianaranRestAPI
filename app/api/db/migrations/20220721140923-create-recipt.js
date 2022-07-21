@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   async up(queryInterface, DataTypes) {
-    await queryInterface.createTable('recept_batches', {
+    await queryInterface.createTable('recipts', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -13,28 +13,19 @@ module.exports = {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
       },
-      year: {
+      batchId: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        field: 'batch_id'
       },
-      month: {
+      personelCode: {
         allowNull: false,
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
+        field: 'personel_code'
       },
-      fileId: {
+      data: {
         allowNull: false,
-        type: DataTypes.INTEGER,
-        field: 'file_id'
-      },
-      total: {
-        allowNull: false,
-        type: DataTypes.INTEGER,
-        defaultValue: 0
-      },
-      confirmed: {
-        allowNull: false,
-        type: DataTypes.INTEGER,
-        defaultValue: 0
+        type: DataTypes.STRING,
       },
       createdAt: {
         allowNull: false,
@@ -47,6 +38,6 @@ module.exports = {
     });
   },
   async down(queryInterface, DataTypes) {
-    await queryInterface.dropTable('recept_batches');
+    await queryInterface.dropTable('recipts');
   }
 };

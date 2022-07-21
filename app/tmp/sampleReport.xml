@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xsi:schemaLocation=" http://win-phnmkvn6b5d/aryan_ReportServer_SSRS?&amp;rs%3ACommand=Render&amp;rs%3AFormat=XML&amp;rs%3ASessionID=hoojutm5us3j05fovetb5r55&amp;rc%3ASchema=True" Name="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0>
+<SalaryReceiptItem>
+<Report Name="/__translated/-SalaryReceiptItem_fair__637410571824330000" Textbox32="شرکت صنعتي و معدني آرياناران سرچشمه (سهامي خاص) " Year="1396" Textbox46="سال" YearMonthTitle="فروردین" Textbox45="فیش حقوق ماه" Textbox9="0" Textbox8="0">
+<Rectangle1 CostCenterFullTitle=" بازرگانی 6100018" Textbox35="مرکز هزینه:" FullName="فروغ سعید پور" Textbox34="نام و نام خانوادگی:" Code="800003" Textbox33="کد پرسنلی:"/>
+<Tablix2>
+<Row0>
+<Column0 Textbox2="وام"/>
+<Column1 Textbox3="کسور"/>
+<Column2 Textbox4="مزایا"/>
+<Column3 Textbox5="سایر"/>
+</Row0>
+<Details4_Collection>
+<Details4>
+<Column0>
+<SalaryReceiptLoan>
+<Report Name="/__translated/-SalaryReceiptLoan_fair__637410571830870000">
+<Tablix44>
+<Row0>
+<Column0 Textbox254="مانده"/>
+<Column1 Textbox252="مبلغ قسط"/>
+<Column2 Textbox247="نام وام"/>
+</Row0>
+</Tablix44>
+</Report>
+</SalaryReceiptLoan>
+</Column0>
+<Column1>
+<SalaryReceiptDeduction>
+<Report Name="/__translated/-SalaryReceiptDeduction_fair__637410571817930000">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0 Value="۳٫۳۲۱٫۵۵۶"/>
+<Column1 FactorTitle="بیمه تامین اجتماعی سهم کارمند"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۱۳۵٫۸۵۶"/>
+<Column1 FactorTitle="مالیات"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۴۲۵٫۰۰۰"/>
+<Column1 FactorTitle="بیمه تکمیلی سهم کارمند"/>
+</Details>
+<Details>
+<Column0 Value="۲۲۸٫۱۶۶"/>
+<Column1 FactorTitle="بیمه عمر - سهم کارمند"/>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptDeduction>
+</Column1>
+<Column2>
+<SalaryReceiptPayment>
+<Report Name="/__translated/-SalaryReceiptPayment_fair__637410571836870000">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0 Value="۱۴٫۲۳۴٫۲۵۸"/>
+<Column1 FactorTitle1="مزد شغل"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۰۰۰٫۸۹۹"/>
+<Column1 FactorTitle1="مزد سنوات"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۴۴۹٫۰۲۹"/>
+<Column1 FactorTitle1="حق جذب"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۵۲۶٫۰۲۹"/>
+<Column1 FactorTitle1="فوق العاده سختی کار"/>
+</Details>
+<Details>
+<Column0 Value="۸۲۱٫۱۹۷"/>
+<Column1 FactorTitle1="خارج از مرکز"/>
+</Details>
+<Details>
+<Column0 Value="۴۳۰٫۵۲۸"/>
+<Column1 FactorTitle1="مزد سربازی"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۱۳۶٫۶۶۷"/>
+<Column1 FactorTitle1="بن کارگری"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۲۵۰"/>
+<Column1 FactorTitle1="خواربار"/>
+</Details>
+<Details>
+<Column0 Value="۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="حق مسکن"/>
+</Details>
+<Details>
+<Column0 Value="۹۲۹٫۹۳۱"/>
+<Column1 FactorTitle1="حق اولاد"/>
+</Details>
+<Details>
+<Column0 Value="۱۶٫۹۱۵٫۸۰۷"/>
+<Column1 FactorTitle1="اضافه کاری "/>
+</Details>
+<Details>
+<Column0 Value="۲٫۱۳۵٫۱۳۹"/>
+<Column1 FactorTitle1="نوبت کاری 15%"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="کارایی"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="امتیاز ویژه مدیر عامل"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۰۴۰٫۰۰۰"/>
+<Column1 FactorTitle1="امتیار ماهانه"/>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptPayment>
+</Column2>
+<Column3>
+<SalaryReceiptAttendance>
+<Report Name="/__translated/-SalaryReceiptAttendance_fair__637410571806670000">
+<Tablix1>
+<Details_Collection>
+<Details Value="۳۱" Title="کارکرد نوبتکاری 15%"/>
+<Details Value="۱۳۹:۰۰" Title="اضافه کار عادی ماهانه نهایی"/>
+<Details Value="۳۱" Title="کارکرد موثر"/>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptAttendance>
+</Column3>
+</Details4>
+</Details4_Collection>
+</Tablix2>
+<Rectangle2 Textbox18="۶۴٫۸۱۲٫۶۶۳" Textbox22="جمع اقساط وام" Textbox17="جمع مزایا" Textbox21="" Textbox20="۹٫۵۷۵٫۷۹۱" Textbox19="جمع کسور"/>
+<Rectangle14 Textbox23="1991300210412" Textbox24="شماره حساب"/>
+<Rectangle13 Textbox25="۵۵٫۲۳۶٫۸۷۲" Textbox26="خالص پرداختی"/>
+</Report>
+</SalaryReceiptItem>
+</Column0>
+</Details>
+<Details>
+<Column0>
+<SalaryReceiptItem>
+<Report Name="/__translated/-SalaryReceiptItem_fair__637410571824330000" Textbox32="شرکت صنعتي و معدني آرياناران سرچشمه (سهامي خاص) " Year="1396" Textbox46="سال" YearMonthTitle="فروردین" Textbox45="فیش حقوق ماه" Textbox9="0" Textbox8="0">
+<Rectangle1 Textbox35="مرکز هزینه:" FullName="حسین اسدی خانوکی" Textbox34="نام و نام خانوادگی:" Code="800005" Textbox33="کد پرسنلی:"/>
+<Tablix2>
+<Row0>
+<Column0 Textbox2="وام"/>
+<Column1 Textbox3="کسور"/>
+<Column2 Textbox4="مزایا"/>
+<Column3 Textbox5="سایر"/>
+</Row0>
+<Details4_Collection>
+<Details4>
+<Column0>
+<SalaryReceiptLoan>
+<Report Name="/__translated/-SalaryReceiptLoan_fair__637410571830870000">
+<Tablix44>
+<Row0>
+<Column0 Textbox254="مانده"/>
+<Column1 Textbox252="مبلغ قسط"/>
+<Column2 Textbox247="نام وام"/>
+</Row0>
+</Tablix44>
+</Report>
+</SalaryReceiptLoan>
+</Column0>
+<Column1>
+<SalaryReceiptDeduction>
+<Report Name="/__translated/-SalaryReceiptDeduction_fair__637410571817930000">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0 Value="۳٫۳۲۱٫۵۵۶"/>
+<Column1 FactorTitle="بیمه تامین اجتماعی سهم کارمند"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۱۳۵٫۸۵۶"/>
+<Column1 FactorTitle="مالیات"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۴۲۵٫۰۰۰"/>
+<Column1 FactorTitle="بیمه تکمیلی سهم کارمند"/>
+</Details>
+<Details>
+<Column0 Value="۲۲۸٫۱۶۶"/>
+<Column1 FactorTitle="بیمه عمر - سهم کارمند"/>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptDeduction>
+</Column1>
+<Column2>
+<SalaryReceiptPayment>
+<Report Name="/__translated/-SalaryReceiptPayment_fair__637410571836870000">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0 Value="۱۴٫۲۳۴٫۲۵۸"/>
+<Column1 FactorTitle1="مزد شغل"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۰۰۰٫۸۹۹"/>
+<Column1 FactorTitle1="مزد سنوات"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۴۴۹٫۰۲۹"/>
+<Column1 FactorTitle1="حق جذب"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۵۲۶٫۰۲۹"/>
+<Column1 FactorTitle1="فوق العاده سختی کار"/>
+</Details>
+<Details>
+<Column0 Value="۸۲۱٫۱۹۷"/>
+<Column1 FactorTitle1="خارج از مرکز"/>
+</Details>
+<Details>
+<Column0 Value="۴۳۰٫۵۲۸"/>
+<Column1 FactorTitle1="مزد سربازی"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۱۳۶٫۶۶۷"/>
+<Column1 FactorTitle1="بن کارگری"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۲۵۰"/>
+<Column1 FactorTitle1="خواربار"/>
+</Details>
+<Details>
+<Column0 Value="۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="حق مسکن"/>
+</Details>
+<Details>
+<Column0 Value="۹۲۹٫۹۳۱"/>
+<Column1 FactorTitle1="حق اولاد"/>
+</Details>
+<Details>
+<Column0 Value="۱۶٫۹۱۵٫۸۰۷"/>
+<Column1 FactorTitle1="اضافه کاری "/>
+</Details>
+<Details>
+<Column0 Value="۲٫۱۳۵٫۱۳۹"/>
+<Column1 FactorTitle1="نوبت کاری 15%"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="کارایی"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="امتیاز ویژه مدیر عامل"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۰۴۰٫۰۰۰"/>
+<Column1 FactorTitle1="امتیار ماهانه"/>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptPayment>
+</Column2>
+<Column3>
+<SalaryReceiptAttendance>
+<Report Name="/__translated/-SalaryReceiptAttendance_fair__637410571806670000">
+<Tablix1>
+<Details_Collection>
+<Details Value="۳۱" Title="کارکرد نوبتکاری 15%"/>
+<Details Value="۱۳۹:۰۰" Title="اضافه کار عادی ماهانه نهایی"/>
+<Details Value="۳۱" Title="کارکرد موثر"/>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptAttendance>
+</Column3>
+</Details4>
+</Details4_Collection>
+</Tablix2>
+<Rectangle2 Textbox18="۵۲٫۸۲۰٫۷۳۴" Textbox22="جمع اقساط وام" Textbox17="جمع مزایا" Textbox21="" Textbox20="۸٫۱۱۰٫۵۷۸" Textbox19="جمع کسور"/>
+<Rectangle14 Textbox23="1991300209806" Textbox24="شماره حساب"/>
+<Rectangle13 Textbox25="۴۴٫۷۱۰٫۱۵۶" Textbox26="خالص پرداختی"/>
+</Report>
+</SalaryReceiptItem>
+</Column0>
+</Details>
+<Details>
+<Column0>
+<SalaryReceiptItem>
+<Report Name="/__translated/-SalaryReceiptItem_fair__637410571824330000" Textbox32="شرکت صنعتي و معدني آرياناران سرچشمه (سهامي خاص) " Year="1396" Textbox46="سال" YearMonthTitle="فروردین" Textbox45="فیش حقوق ماه" Textbox9="0" Textbox8="0">
+<Rectangle1 Textbox35="مرکز هزینه:" FullName="علیرضا لطیفی" Textbox34="نام و نام خانوادگی:" Code="800006" Textbox33="کد پرسنلی:"/>
+<Tablix2>
+<Row0>
+<Column0 Textbox2="وام"/>
+<Column1 Textbox3="کسور"/>
+<Column2 Textbox4="مزایا"/>
+<Column3 Textbox5="سایر"/>
+</Row0>
+<Details4_Collection>
+<Details4>
+<Column0>
+<SalaryReceiptLoan>
+<Report Name="/__translated/-SalaryReceiptLoan_fair__637410571830870000">
+<Tablix44>
+<Row0>
+<Column0 Textbox254="مانده"/>
+<Column1 Textbox252="مبلغ قسط"/>
+<Column2 Textbox247="نام وام"/>
+</Row0>
+</Tablix44>
+</Report>
+</SalaryReceiptLoan>
+</Column0>
+<Column1>
+<SalaryReceiptDeduction>
+<Report Name="/__translated/-SalaryReceiptDeduction_fair__637410571817930000">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0 Value="۴٫۰۰۵٫۷۹۴"/>
+<Column1 FactorTitle="بیمه تامین اجتماعی سهم کارمند"/>
+</Details>
+<Details>
+<Column0 Value="۴٫۳۲۶٫۷۸۰"/>
+<Column1 FactorTitle="مالیات"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۹۹۵٫۰۰۰"/>
+<Column1 FactorTitle="بیمه تکمیلی سهم کارمند"/>
+</Details>
+<Details>
+<Column0 Value="۲۲۸٫۱۶۶"/>
+<Column1 FactorTitle="بیمه عمر - سهم کارمند"/>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptDeduction>
+</Column1>
+<Column2>
+<SalaryReceiptPayment>
+<Report Name="/__translated/-SalaryReceiptPayment_fair__637410571836870000">
+<Tablix1>
+<Details_Collection>
+<Details>
+<Column0 Value="۱۵٫۶۹۳٫۶۴۴"/>
+<Column1 FactorTitle1="مزد شغل"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۴۸۸٫۸۹۹"/>
+<Column1 FactorTitle1="مزد سنوات"/>
+</Details>
+<Details>
+<Column0 Value="۴٫۱۲۷٫۹۷۰"/>
+<Column1 FactorTitle1="حق جذب"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۸۰۱٫۴۷۲"/>
+<Column1 FactorTitle1="فوق العاده سختی کار"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۶۴۸٫۳۷۸"/>
+<Column1 FactorTitle1="حق سرپرستی"/>
+</Details>
+<Details>
+<Column0 Value="۹۱۷٫۳۲۷"/>
+<Column1 FactorTitle1="خارج از مرکز"/>
+</Details>
+<Details>
+<Column0 Value="۴۵۸٫۳۰۴"/>
+<Column1 FactorTitle1="مزد سربازی"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۱۳۶٫۶۶۷"/>
+<Column1 FactorTitle1="بن کارگری"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۲۵۰"/>
+<Column1 FactorTitle1="خواربار"/>
+</Details>
+<Details>
+<Column0 Value="۴۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="حق مسکن"/>
+</Details>
+<Details>
+<Column0 Value="۱٫۸۵۹٫۸۶۲"/>
+<Column1 FactorTitle1="حق اولاد"/>
+</Details>
+<Details>
+<Column0 Value="۱۸٫۰۵۱٫۷۱۵"/>
+<Column1 FactorTitle1="اضافه کاری "/>
+</Details>
+<Details>
+<Column0 Value="۷٫۵۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="کارایی"/>
+</Details>
+<Details>
+<Column0 Value="۳٫۸۰۰٫۰۰۰"/>
+<Column1 FactorTitle1="امتیاز ویژه مدیر عامل"/>
+</Details>
+<Details>
+<Column0 Value="۲٫۰۴۰٫۰۰۰"/>
+<Column1 FactorTitle1="امتیار ماهانه"/>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptPayment>
+</Column2>
+<Column3>
+<SalaryReceiptAttendance>
+<Report Name="/__translated/-SalaryReceiptAttendance_fair__637410571806670000">
+<Tablix1>
+<Details_Collection>
+<Details Value="۱۱۹:۰۰" Title="اضافه کار عادی ماهانه نهایی"/>
+<Details Value="۳۱" Title="کارکرد موثر"/>
+</Details_Collection>
+</Tablix1>
+</Report>
+</SalaryReceiptAttendance>
+</Column3>
+</Details4>
+</Details4_Collection>
+</Tablix2>
+<Rectangle2 Textbox18="۶۴٫۹۲۵٫۴۸۸" Textbox22="جمع اقساط وام" Textbox17="جمع مزایا" Textbox21="" Textbox20="۱۰٫۵۵۵٫۷۴۰" Textbox19="جمع کسور"/>
+<Rectangle14 Textbox23="1991800103101" Textbox24="شماره حساب"/>
+<Rectangle13 Textbox25="۵۴٫۳۶۹٫۷۴۸" Textbox26="خالص پرداختی"/>
+</Report>
+</SalaryReceiptItem>
+</Column0>
+</Details>
+</Details_Collection>
+</Tablix1>
+</Report>
