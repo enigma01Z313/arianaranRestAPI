@@ -1,6 +1,9 @@
 const updateUser = async (req, res, next) => {
   let uppedData = false;
-  const { jsonData: user } = res;
+  const {
+    jsonData: user,
+    Role: { id: roleId },
+  } = res;
   const {
     phone,
     nationalCode,
@@ -9,7 +12,6 @@ const updateUser = async (req, res, next) => {
     lastName,
     imageId,
     status,
-    roleId,
   } = req.body;
 
   if (phone && phone !== user.phone) user.phone = uppedData = phone;
@@ -28,7 +30,8 @@ const updateUser = async (req, res, next) => {
 
   if (imageId && imageId !== user.imageId) user.imageId = uppedData = imageId;
 
-  if (status && status !== user.status) user.status = uppedData = status;
+  if (typeof status !== typeof undefined && status !== user.status)
+    user.status = uppedData = status;
 
   if (roleId && roleId !== user.roleId) user.roleId = uppedData = roleId;
 
@@ -38,6 +41,7 @@ const updateUser = async (req, res, next) => {
   }
 
   res.jsonData = await user.save();
+
   next();
 };
 

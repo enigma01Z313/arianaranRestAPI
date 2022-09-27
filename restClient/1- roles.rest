@@ -1,0 +1,50 @@
+@base = http://localhost:30000
+@baseUrl = {{base}}/api/roles
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzY2JkMDg2LWYxMzEtNDM2Yi1iZjJkLWE4YTc0MDI2MTM0YiIsInBob25lIjoiMDkzMzM5NTA4ODkiLCJpYXQiOjE2NjQyOTI2MTgsImV4cCI6MTY2NDM4MjYxOH0.NvaRvg-0-phpGPvydqKgI9_LNE-T4pJrpezV3qLyrwA
+
+GET {{baseUrl}}/permissions
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+//get list of roles
+GET {{baseUrl}}/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+//get list of roles
+GET {{baseUrl}}/?limit=1&page=3
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{baseUrl}}/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "role new",
+  "permissions": [
+    "SEE_OWN_RECEIPTS"
+  ]
+}
+
+###
+GET {{baseUrl}}/464ba229-3084-4e0e-8f31-ab95316ca361
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+PUT {{baseUrl}}/464ba229-3084-4e0e-8f31-ab95316ca361
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "label": "sss",
+  "status": 0,
+  "name": "role new1",
+  "permissions": [
+    "SEE_OWN_RECEIPTS"
+  ]
+}

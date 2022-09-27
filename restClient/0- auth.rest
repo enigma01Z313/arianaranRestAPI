@@ -1,0 +1,26 @@
+@base = http://localhost:30000
+@baseUrl = {{base}}/api/auth
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "phone": "09333950889",
+  "password": "12300321"
+}
+
+###
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "phone": "09333950889"
+}
+
+###
+POST {{baseUrl}}/63cbd086-f131-436b-bf2d-a8a74026134b
+Content-Type: application/json
+
+{
+  "confirmCode": "680413"
+}

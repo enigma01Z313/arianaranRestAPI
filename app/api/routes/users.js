@@ -85,7 +85,6 @@ router.get(
   use(authorization.def("SEE_USERS")),
   filteredData({ id: { [Op.ne]: 1 } }),
   use(getUsers),
-  (req, res) => res.end('aaaaaa'),
   serveJson
 );
 

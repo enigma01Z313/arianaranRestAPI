@@ -23,6 +23,7 @@ module.exports = (sequelize, DataTypes) => {
         id: this.uuid,
         ...this.roleData,
         status: getStatus(this.status),
+        email: undefined,
         roleId: undefined,
         uuid: undefined,
         ip: undefined,

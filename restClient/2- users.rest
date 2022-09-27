@@ -1,0 +1,48 @@
+@base = http://localhost:30000
+@baseUrl = {{base}}/api/users
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzY2JkMDg2LWYxMzEtNDM2Yi1iZjJkLWE4YTc0MDI2MTM0YiIsInBob25lIjoiMDkzMzM5NTA4ODkiLCJpYXQiOjE2NjQyOTI2MTgsImV4cCI6MTY2NDM4MjYxOH0.NvaRvg-0-phpGPvydqKgI9_LNE-T4pJrpezV3qLyrwA
+
+GET {{baseUrl}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+GET {{baseUrl}}/?limit=1&page=2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "firstName": "ss",
+  "lastName": "ww",
+  "nationalCode": "0017306142",
+  "employeeCode": "1234563",
+  "phone": "09333950882",
+  "password": "12300321",
+  "status": 1,
+  "roleId": "464ba229-3084-4e0e-8f31-ab95316ca361"
+}
+
+###
+
+GET {{baseUrl}}/43310931-9ea4-41ff-961c-f9930b169a9f
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+PUT {{baseUrl}}/43310931-9ea4-41ff-961c-f9930b169a9f
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": 0,
+  "firstName": "sss",
+  "lastName": "www",
+  "employeeCode": "1234564",
+  "phone": "09333950883",
+  "roleId": "3121b419-2a69-46c0-93bd-f9a339849e79"
+}
