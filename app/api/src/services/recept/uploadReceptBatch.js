@@ -4,6 +4,8 @@
 const { ReceptBatch } = require("../../../db/models");
 
 const uploadReceptBatch = async (req, res, next) => {
+
+  return res.end('11111111111111111111')
   const {
     formFields: { year, month },
     file: { id: fileId },

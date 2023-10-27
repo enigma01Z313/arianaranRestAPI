@@ -43,19 +43,28 @@ const uploadFile =
       const oldPath = files[fileName].filepath;
       const newPath = path.resolve("./", "app/filemanager/", fileNewName);
 
-      fs.rename(oldPath, newPath, async function (err) {
-        if (err)
-          return next(
-            fError(500, err.message, "خطای آپلود فایل، مجدد تلاش نمایید")
-          );
+      fs.rename(
+        "C:\\NODE\\arianaranRestAPI\\app\\tmp\\sampleReport.xml",
+        "C:\\NODE\\arianaranRestAPI\\app\\filemanager\\sampleReport.xml",
+        async function (err) {
+          // fs.rename(oldPath, newPath, async function (err) {
+          if (err)
+            return next(
+              fError(500, err.message, "خطای آپلود فایل، مجدد تلاش نمایید")
+            );
 
-        const file = await File.create({
-          path: fileNewName,
-          name: theFileName,
-        });
-        res.file = file;
-        next();
-      });
+          console.log(oldPath);
+          console.log(newPath);
+          return res.end("55555555555555555555");
+
+          const file = await File.create({
+            path: fileNewName,
+            name: theFileName,
+          });
+          res.file = file;
+          next();
+        }
+      );
     });
   };
 

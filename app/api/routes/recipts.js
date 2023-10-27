@@ -25,8 +25,8 @@ router.post(
       maxAllowedSize: "100Kb",
     })
   ),
-  use(reciptBatchUnique),
-  uploadReceptBatch,
+  // use(reciptBatchUnique),
+  // uploadReceptBatch,
   serveJson
 );
 
