@@ -26,7 +26,7 @@ router.post(
     })
   ),
   // use(reciptBatchUnique),
-  // uploadReceptBatch,
+  uploadReceptBatch,
   serveJson
 );
 

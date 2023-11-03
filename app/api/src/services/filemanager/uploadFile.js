@@ -49,10 +49,6 @@ const uploadFile =
             fError(500, err.message, "خطای آپلود فایل، مجدد تلاش نمایید")
           );
 
-        console.log(oldPath);
-        console.log(newPath);
-        return res.end("55555555555555555555");
-
         const file = await File.create({
           path: fileNewName,
           name: theFileName,
